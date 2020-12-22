@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7B61AC952CCAACC14B802B72 /* Pods_RxMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DC3C06C95D307CC378E9F39 /* Pods_RxMemo.framework */; };
 		B68CDC5E259238E800303F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CDC5D259238E800303F26 /* AppDelegate.swift */; };
 		B68CDC60259238E800303F26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CDC5F259238E800303F26 /* SceneDelegate.swift */; };
-		B68CDC62259238E800303F26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68CDC61259238E800303F26 /* ViewController.swift */; };
 		B68CDC65259238E800303F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68CDC63259238E800303F26 /* Main.storyboard */; };
 		B68CDC68259238E800303F26 /* RxMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B68CDC66259238E800303F26 /* RxMemo.xcdatamodeld */; };
 		B68CDC6A259238EB00303F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B68CDC69259238EB00303F26 /* Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		B68CDC5A259238E800303F26 /* RxMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68CDC5D259238E800303F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B68CDC5F259238E800303F26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B68CDC61259238E800303F26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B68CDC64259238E800303F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B68CDC67259238E800303F26 /* RxMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxMemo.xcdatamodel; sourceTree = "<group>"; };
 		B68CDC69259238EB00303F26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +56,44 @@
 				33963BD1E88DF7CACA65BC8A /* Pods-RxMemo.debug.xcconfig */,
 				B466644C4D8C583782C5AC95 /* Pods-RxMemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B634109B25923D3B00A5D224 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B634109C25923D5C00A5D224 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B68CDC63259238E800303F26 /* Main.storyboard */,
+				B68CDC6B259238EB00303F26 /* LaunchScreen.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B634109D25923D7200A5D224 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B634109E25923D8100A5D224 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B634109F25923D9C00A5D224 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		B68CDC51259238E800303F26 = {
@@ -83,12 +117,14 @@
 		B68CDC5C259238E800303F26 /* RxMemo */ = {
 			isa = PBXGroup;
 			children = (
+				B634109F25923D9C00A5D224 /* Scene */,
+				B634109E25923D8100A5D224 /* Service */,
+				B634109D25923D7200A5D224 /* ViewModel */,
+				B634109C25923D5C00A5D224 /* ViewController */,
+				B634109B25923D3B00A5D224 /* Model */,
 				B68CDC5D259238E800303F26 /* AppDelegate.swift */,
 				B68CDC5F259238E800303F26 /* SceneDelegate.swift */,
-				B68CDC61259238E800303F26 /* ViewController.swift */,
-				B68CDC63259238E800303F26 /* Main.storyboard */,
 				B68CDC69259238EB00303F26 /* Assets.xcassets */,
-				B68CDC6B259238EB00303F26 /* LaunchScreen.storyboard */,
 				B68CDC6E259238EB00303F26 /* Info.plist */,
 				B68CDC66259238E800303F26 /* RxMemo.xcdatamodeld */,
 			);
@@ -209,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68CDC62259238E800303F26 /* ViewController.swift in Sources */,
 				B68CDC5E259238E800303F26 /* AppDelegate.swift in Sources */,
 				B68CDC60259238E800303F26 /* SceneDelegate.swift in Sources */,
 				B68CDC68259238E800303F26 /* RxMemo.xcdatamodeld in Sources */,
@@ -289,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -344,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
