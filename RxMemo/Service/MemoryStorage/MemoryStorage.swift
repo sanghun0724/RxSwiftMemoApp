@@ -56,7 +56,7 @@ class MemoryStorage: MemoStorageType {
         store.onNext(list)
         
         return Observable.just(memo)
-    }
+     }
     
 }
 
